@@ -15,6 +15,8 @@
   font-size: 30px;
   text-align: center;
   transform: translate(0%, 400%);
+
+  /*Calculator base*/
 }
 .calc-container {
   background-color: rgb(90, 75, 234);
