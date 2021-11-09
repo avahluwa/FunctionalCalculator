@@ -13,7 +13,6 @@
 .description {
   font-family: Calibri;
   font-size: 30px;
-  text-align: center;
   transform: translate(0%, 400%);
 
   /*Calculator base*/
@@ -42,6 +41,13 @@
   grid-column: 1 / 4;
   cursor: pointer;
 }
+.gridClear {
+  background-color: #808080;
+  border: 3px solid black;
+  cursor: grab;
+  font-size: 40px;
+  font-weight: bold;
+}
 .grid {
   background-color: rgb(113, 242, 113);
   border: 3px solid black;
@@ -49,19 +55,13 @@
   font-size: 40px;
   font-weight: bold;
 }
-.grid2 {
-  background-color: rgb(113, 242, 113);
-  border: 3px solid black;
-  grid-column: 2 / 4;
-  font-size: 40px;
-  font-weight: bold;
-}
-.grid:hover {
-  background-color: white;
-  color: blue;
+
+.gridClear:hover {
+  background-color: red;
+  color: black;
   cursor: pointer;
 }
-.grid2:hover {
+.grid:hover {
   background-color: white;
   color: blue;
   cursor: pointer;
