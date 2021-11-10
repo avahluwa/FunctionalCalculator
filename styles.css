@@ -8,11 +8,18 @@
   transform: translate(-50%, -50%);
 }
 /*_____________________________________________________________*/
-.description {
+.description p {
   font-family: Calibri;
   font-size: 30px;
-  transform: translate(0%, 400%);
+  transform: translate(0%, 500%);
 }
+/*____list of functionality_____________________________________*/
+.function-list {
+  font-family: Calibri;
+  font-size: 20px;
+  transform: translate(0%, 150%);
+}
+
 /*___base of calculator________________________________________*/
 .calc-container {
   background-color: rgb(90, 75, 234);

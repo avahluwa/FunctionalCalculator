@@ -7,31 +7,41 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- main heading -->
     <div class="heading">
       <h1>Calculator</h1>
     </div>
-
+      
     <div class="description">
       <p>
-        This is a <i><u>non-functioning</u></i> calculator!
+        This is a <i><u>JavaScript Functional</u></i> calculator!
       </p>
-
     </div>
-
+      <!-- functionality list - to update -->
+    <div class="function-list">
+    <p>Functionality Includes:</p>
+    <ul>
+      <li>Addition</li>
+      <li>Subtraction</li>
+      <li>Multiplication</li>
+      <li>Division</li>
+    </ul>
+    </div>
+                        <!-- calculator base -->
     <div class="calc-container">
-
+                        <!-- disabled calculator screen for visual -->
       <input class="input" type="text" value="0" disabled/>
-
+                        <!-- calculator grid for buttons -->
     <div class="calc-grid">
-
+                                <!-- clear -->
       <button type="grid" class="gridClear" value="gridClear">AC</button>
-
+                            <!-- basic math operators -->
       <button type="button" class="operator">&plusmn;</button>
       <button type="button" class="operator" value="+">&plus;</button>
       <button type="button" class="operator" value="*">&times;</button>
       <button type="button" class="operator" value="/">&divide;</button>
       <button type="button" class="operator" value="-">&minus;</button>
-
+                            <!-- number buttons -->
       <button type="button" value="1">1</button>
       <button type="button" value="2">2</button>
       <button type="button" value="3">3</button>
@@ -42,13 +52,13 @@
       <button type="button" value="8">8</button>
       <button type="button" value="9">9</button>
       <button type="button" value="0">0</button>
-
+                              <!-- decimal -->
       <button type="button" class="decimal" value=".">.</button>
-      <button type="button" class="equals" value="=">=</button>
+      <button type="button" class="equals" value="=">=</button> <!-- equal operator -->
 
     </div>
   </div>
-
+                                                                  <!-- updated GitHub link -->
     <a href="https://github.com/avahluwa/functionalcalculator">Github Calculator</a>
   </body>
 </html>
