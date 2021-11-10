@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -18,26 +18,35 @@
     </div>
 
     <div class="calc-container">
-      <input class="input" type="number" value="0" />
-      <button class="gridClear">AC</button>
-      <button class="grid">&plusmn;</button>
-      <button class="grid">&percnt;</button>
-      <button class="grid">1</button>
-      <button class="grid">2</button>
-      <button class="grid">3</button>
-      <button class="grid">4</button>
-      <button class="grid">5</button>
-      <button class="grid">6</button>
-      <button class="grid">7</button>
-      <button class="grid">8</button>
-      <button class="grid">9</button>
-      <button class="grid">&times;</button>
-      <button class="grid">&divide;</button>
-      <button class="grid">&plus;</button>
-      <button class="grid">&minus;</button>
-      <button class="grid">&sdot;</button>
-      <button class="grid">&equals;</button>
+
+      <input class="input" type="text" value="0" disabled/>
+
+    <div class="calc-grid">
+
+      <button type="grid" class="gridClear" value="gridClear">AC</button>
+
+      <button type="button" class="operator">&plusmn;</button>
+      <button type="button" class="operator" value="+">&plus;</button>
+      <button type="button" class="operator" value="*">&times;</button>
+      <button type="button" class="operator" value="/">&divide;</button>
+      <button type="button" class="operator" value="-">&minus;</button>
+
+      <button type="button" value="1">1</button>
+      <button type="button" value="2">2</button>
+      <button type="button" value="3">3</button>
+      <button type="button" value="4">4</button>
+      <button type="button" value="5">5</button>
+      <button type="button" value="6">6</button>
+      <button type="button" value="7">7</button>
+      <button type="button" value="8">8</button>
+      <button type="button" value="9">9</button>
+      <button type="button" value="0">0</button>
+
+      <button type="button" class="decimal" value=".">.</button>
+      <button type="button" class="equals" value="=">=</button>
+
     </div>
+  </div>
 
     <a href="https://github.com/avahluwa/calculator">Github Calculator</a>
   </body>
