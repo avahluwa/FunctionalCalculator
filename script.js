@@ -34,11 +34,11 @@ const calculator = {
     const { firstOperand, displayValue, operator } = calculator
     const inputValue = parseFloat(displayValue);
     
+    // allows user to overwrite previous operation
     if (operator && calculator.waitingForSecondOperand)  {
       calculator.operator = nextOperator;
       return;
     }
-  
   
     if (firstOperand == null && !isNaN(inputValue)) {
       calculator.firstOperand = inputValue;
@@ -53,7 +53,7 @@ const calculator = {
     calculator.operator = nextOperator;
   }
   
-  //basic operation calculation input
+  // basic operation calculation input
   function calculate(firstOperand, secondOperand, operator) {
     if (operator === '+') {
       return firstOperand + secondOperand;
@@ -68,6 +68,7 @@ const calculator = {
     return secondOperand;
   }
   
+  // AC (clear) function
   function resetCalculator() {
     calculator.displayValue = '0';
     calculator.firstOperand = null;
@@ -83,6 +84,7 @@ const calculator = {
   
   updateDisplay();
   
+  // event listener - pulls operations from container of HTML
   const keys = document.querySelector('.calc-container');
   keys.addEventListener('click', event => {
     const { target } = event;
@@ -91,7 +93,6 @@ const calculator = {
       return;
     }
   
-    //uses operators from html doc
     switch (value) {
       case '+':
       case '-':
