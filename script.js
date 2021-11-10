@@ -6,6 +6,7 @@ const calculator = {
     operator: null,
   };
   
+  // condition for display whether an input has been enetered
   function inputDigit(digit) {
     const { displayValue, waitingForSecondOperand } = calculator;
   
@@ -16,7 +17,7 @@ const calculator = {
       calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
     }
   }
-  
+  // decimal method - adds 'dot' (0.)
   function inputDecimal(dot) {
     if (calculator.waitingForSecondOperand === true) {
         calculator.displayValue = "0."
@@ -52,6 +53,7 @@ const calculator = {
     calculator.operator = nextOperator;
   }
   
+  //basic operation calculation input
   function calculate(firstOperand, secondOperand, operator) {
     if (operator === '+') {
       return firstOperand + secondOperand;
@@ -89,7 +91,7 @@ const calculator = {
       return;
     }
   
-    //pulls operators from html doc
+    //uses operators from html doc
     switch (value) {
       case '+':
       case '-':
